@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kNN-a9-EuY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryItem" id="kNN-a9-EuY">
                                 <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kNN-a9-EuY" id="vlG-yI-AWr">
@@ -36,12 +36,12 @@
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="znh-el-aCr">
                             <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                             <connections>
-                                <action selector="AddBuutonPressed:" destination="062-Xg-8aG" id="2Y6-Hj-1ZT"/>
+                                <action selector="AddButtonPressed:" destination="062-Xg-8aG" id="2Y6-Hj-1ZT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="CAk-7F-RN3" kind="show" id="jsT-nV-5FV"/>
+                        <segue destination="CAk-7F-RN3" kind="show" identifier="GoItemList" id="jsT-nV-5FV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8d-cL-CZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
